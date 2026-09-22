@@ -1,0 +1,8 @@
+include LICENSE NOTICE README.md pyproject.toml
+recursive-include licenses *.txt
+recursive-include src *.py
+prune benchmarks
+prune docs
+prune scripts
+prune tests
+prune third_party

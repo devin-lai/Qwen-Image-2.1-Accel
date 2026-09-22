@@ -1,0 +1,38 @@
+Qwen-Image-2.1-Accel
+Copyright (c) 2026 Devin Lai
+https://github.com/devin-lai/Qwen-Image-2.1-Accel
+
+The contents of the project's original source files are subject to the Common
+Public Attribution License Version 1.0 (the "License"); you may not use these
+files except in compliance with the License. You may obtain a copy at:
+https://github.com/devin-lai/Qwen-Image-2.1-Accel/blob/main/LICENSE
+
+The License is based on the Mozilla Public License Version 1.1 but Sections 14
+and 15 have been added to cover use of software over a computer network and
+provide for limited attribution for the Original Developer. In addition,
+Exhibit A has been modified to be consistent with Exhibit B.
+
+Software distributed under the License is distributed on an "AS IS" basis,
+WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+the specific language governing rights and limitations under the License.
+
+The Original Code is Qwen-Image-2.1-Accel, excluding separately licensed
+third-party material. The Initial and Original Developer is Devin Lai.
+All portions written by Devin Lai are Copyright (c) 2026 Devin Lai.
+All Rights Reserved. Contributors are identified in the project version history.
+No alternative license is designated.
+
+Exhibit B attribution (also required in Larger Works under Section 14):
+  Copyright (c) 2026 Devin Lai
+  Powered by Qwen-Image-2.1-Accel
+  https://github.com/devin-lai/Qwen-Image-2.1-Accel
+  No graphic image is required.
+
+Third-party notices
+-------------------
+Diffusers: Apache-2.0; see licenses/DIFFUSERS.txt and the bundled wheel.
+SageAttention: Apache-2.0; see licenses/SAGEATTENTION.txt and the source archive.
+The LayerNorm reduction order in kernels/layernorm.py and kernels/epilogue.py
+follows PyTorch CUDA implementations; see licenses/PYTORCH.txt for the original
+copyright notices and BSD terms. Those notices and rights are retained.
+Model weights are not included and remain subject to their own terms.

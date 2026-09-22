@@ -1,0 +1,25 @@
+{
+  "diffusers": {
+    "path": "wheels/diffusers-0.41.0.dev0-py3-none-any.whl",
+    "sha256": "bb321b6f427057be202f2b49e5cd7449fcd376c1c6376c2c4c023d6ce0842cab",
+    "validated_sources": {
+      "pipeline_qwenimage21.py": {
+        "matches_installed": true,
+        "sha256": "6985b2f1f25e8dd09ef85c867ebcad184b981f10c0b4f80757ca9cc135b8fa5e"
+      },
+      "transformer_qwenimage21.py": {
+        "matches_installed": true,
+        "sha256": "0eb0555e21ca93195e1fe9389113cafbf0e8822f6454c3001cebb3d21521ebd7"
+      },
+      "attention_dispatch.py": {
+        "matches_installed": true,
+        "sha256": "1ac40166c946dc416a592cc27b2bee0ddb32679ba404dcc12976d613f8c53738"
+      }
+    }
+  },
+  "sageattention": {
+    "path": "sources/sageattention-d1a57a5.tar.gz",
+    "revision": "d1a57a546c3d395b1ffcbeecc66d81db76f3b4b5",
+    "sha256": "18ce3aebd3d04511abd01ed99de603cc88d7d4df6e81edee2565984ea4214f1c"
+  }
+}

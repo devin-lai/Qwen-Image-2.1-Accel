@@ -1,0 +1,4 @@
+* text=auto
+*.sh text eol=lf
+*.whl binary
+*.tar.gz binary

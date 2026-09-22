@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-image-accel"
+version = "0.1.0"
+description = "Pipeline-scoped Qwen-Image-2.1 inference optimizations for RTX 5090"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "CPAL-1.0"
+license-files = ["LICENSE", "NOTICE", "licenses/*.txt"]
+authors = [{name = "Devin Lai"}]
+dependencies = [
+    "torch>=2.1",
+    "diffusers==0.41.0.dev0",
+    "accelerate==1.15.0",
+    "transformers==5.17.0",
+    "Pillow==12.2.0",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+qwen-image-accel = "qwen_image_accel.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/devin-lai/Qwen-Image-2.1-Accel"
+Repository = "https://github.com/devin-lai/Qwen-Image-2.1-Accel"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
