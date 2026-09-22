@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Qwen-Image-2.1-Accel — single-GPU image generation and editing</title>
+  <desc id="description">Recorded RTX 5090 latency at 1024 by 1024 pixels and 40 steps: baseline 15.31 seconds, fused BF16 13.89 seconds, optional MXFP8 with SageAttention2 6.48 seconds, or 2.36 times speedup. Historical measurements before the package refactor. Approximate profiles change numerical results.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#243144" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="#0B1220"/>
+  <rect x="900" width="380" height="640" fill="url(#grid)" opacity=".4"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#5EEAD4"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="68" fill="#5EEAD4" font-size="18" font-weight="700" letter-spacing="2">SINGLE GPU. FASTER ITERATION.</text>
+    <text x="64" y="137" fill="#F8FAFC" font-size="53" font-weight="700">Qwen-Image-2.1-Accel</text>
+    <text x="64" y="181" fill="#CBD5E1" font-size="25">Image generation + editing on NVIDIA RTX 5090</text>
+    <rect x="64" y="215" width="124" height="34" rx="17" fill="#19283B"/>
+    <rect x="198" y="215" width="150" height="34" rx="17" fill="#19283B"/>
+    <rect x="358" y="215" width="206" height="34" rx="17" fill="#19283B"/>
+    <text x="126" y="238" text-anchor="middle" fill="#E2E8F0" font-size="16">Python + CLI</text>
+    <text x="273" y="238" text-anchor="middle" fill="#E2E8F0" font-size="16">BF16 by default</text>
+    <text x="461" y="238" text-anchor="middle" fill="#E2E8F0" font-size="16">Optional MXFP8 + Sage</text>
+    <path d="M64 281H1216" stroke="#2C3B50"/>
+    <text x="64" y="319" fill="#94A3B8" font-size="17" letter-spacing="1">RECORDED LATENCY · 1024 × 1024 · 40 STEPS</text>
+    <text x="64" y="367" fill="#E2E8F0" font-size="19">Baseline</text>
+    <rect x="270" y="344" width="450" height="31" rx="5" fill="#52627A"/>
+    <text x="738" y="367" fill="#E2E8F0" font-size="21" font-weight="700">15.31 s</text>
+    <text x="64" y="417" fill="#E2E8F0" font-size="19">Fused BF16</text>
+    <rect x="270" y="394" width="408.3" height="31" rx="5" fill="#8CA6CC"/>
+    <text x="696" y="417" fill="#E2E8F0" font-size="21" font-weight="700">13.89 s</text>
+    <text x="64" y="467" fill="#5EEAD4" font-size="19">MXFP8 + Sage</text>
+    <rect x="270" y="444" width="190.5" height="31" rx="5" fill="#5EEAD4"/>
+    <text x="478" y="467" fill="#5EEAD4" font-size="21" font-weight="700">6.48 s</text>
+    <path d="M888 325V479" stroke="#2C3B50"/>
+    <text x="942" y="401" fill="#5EEAD4" font-size="70" font-weight="700">2.36×</text>
+    <text x="945" y="441" fill="#E2E8F0" font-size="21">measured speedup</text>
+    <text x="945" y="471" fill="#94A3B8" font-size="17">MXFP8 + Sage vs. baseline</text>
+    <text x="64" y="523" fill="#CBD5E1" font-size="17">Historical, before package refactor · 2 timed runs · excludes loading and PNG saving</text>
+    <text x="64" y="550" fill="#CBD5E1" font-size="17">Approximate profiles change numerical results. Full methodology and accuracy in the repository.</text>
+    <path d="M64 574H1216" stroke="#2C3B50"/>
+    <text x="64" y="609" fill="#94A3B8" font-size="18">github.com/devin-lai/Qwen-Image-2.1-Accel</text>
+    <text x="1216" y="609" text-anchor="end" fill="#94A3B8" font-size="16">Independent community project</text>
+  </g>
+</svg>

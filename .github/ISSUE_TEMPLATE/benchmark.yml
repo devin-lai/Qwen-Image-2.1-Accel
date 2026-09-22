@@ -1,0 +1,36 @@
+name: Benchmark or compatibility report
+description: Share reproducible latency, accuracy or hardware compatibility observations.
+title: "[Benchmark]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing measurements. Follow docs/benchmarks/README.md and keep baseline and candidate settings comparable. An observation on another GPU is welcome; it does not by itself establish hardware support.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Hardware and runtime
+      description: Include commit, checkpoint/revision, GPU/VRAM, OS, Python, PyTorch/CUDA, Triton and Diffusers versions.
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Workload and configuration
+      description: Include baseline/candidate profiles, commands, QW21_* settings, prompts or editing inputs, resolution, steps, seed and batch size.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Timing method
+      description: Specify warmup, timed repeats, averaging, other GPU workloads, and whether loading, encoding, denoising, VAE decoding and saving are included.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results and accuracy
+      description: Attach compact report/comparison JSON, baseline and candidate latency, peak VRAM and any image/latent differences. State clearly if accuracy was not checked. Remove credentials and private paths from attachments.
+    validations:
+      required: true

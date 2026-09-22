@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a useful improvement and explain the workflow it would help.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would this help you do?
+      description: Describe the workflow or limitation, including relevant hardware.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the behavior you would like and alternatives you have tried.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting examples or measurements
+      description: Optional commands, documentation or benchmark evidence.

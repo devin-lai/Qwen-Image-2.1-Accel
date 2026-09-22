@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation and compatibility
+    url: https://github.com/devin-lai/Qwen-Image-2.1-Accel/blob/main/docs/installation.md
+    about: Check the validated runtime, model setup and CPU-only development instructions.
+  - name: Benchmark methodology and accuracy
+    url: https://github.com/devin-lai/Qwen-Image-2.1-Accel/blob/main/docs/benchmarks/README.md
+    about: Read the timing boundaries and numerical validation workflow before comparing results.

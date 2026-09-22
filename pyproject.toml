@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "qwen-image-accel"
 version = "0.1.0"
-description = "Pipeline-scoped Qwen-Image-2.1 inference optimizations for RTX 5090"
+description = "Accelerated Qwen-Image-2.1 image generation and editing on RTX 5090 with BF16 Triton kernels and optional MXFP8"
+keywords = ["qwen-image", "image-generation", "image-editing", "inference-optimization", "rtx-5090", "triton", "mxfp8", "sageattention"]
 readme = "README.md"
 requires-python = ">=3.10"
 license = "CPAL-1.0"
@@ -26,6 +27,9 @@ qwen-image-accel = "qwen_image_accel.cli:main"
 [project.urls]
 Homepage = "https://github.com/devin-lai/Qwen-Image-2.1-Accel"
 Repository = "https://github.com/devin-lai/Qwen-Image-2.1-Accel"
+Documentation = "https://github.com/devin-lai/Qwen-Image-2.1-Accel/blob/main/docs/installation.md"
+Issues = "https://github.com/devin-lai/Qwen-Image-2.1-Accel/issues"
+Benchmarks = "https://github.com/devin-lai/Qwen-Image-2.1-Accel/blob/main/docs/benchmarks/README.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

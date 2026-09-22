@@ -1,0 +1,42 @@
+name: Bug report or setup help
+description: Report a reproducible problem or get help with installation and inference.
+title: "[Bug / Help]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Qwen-Image-2.1-Accel. Check the installation guide and existing issues first. Remove credentials and private paths from logs before posting.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the repository commit, GPU and VRAM, OS, Python, PyTorch/CUDA, Triton and Diffusers versions.
+      placeholder: |
+        Commit:
+        GPU / VRAM:
+        OS / Python:
+        PyTorch / CUDA / Triton:
+        Diffusers (bundled wheel or another build):
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction command and settings
+      description: Include the profile, relevant QW21_* variables, size, steps and seed. For editing, describe the reference images.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error or relevant logs
+      description: Paste the full traceback if there is one.
+      render: text

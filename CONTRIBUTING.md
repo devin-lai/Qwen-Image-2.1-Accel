@@ -1,5 +1,29 @@
 # Contributing
 
+Documentation improvements, reproducible bug reports, GPU validation and
+measured optimizations are all welcome. You do not need a GPU to improve the
+docs or run the CPU test suite.
+
+## Report a problem or share a result
+
+Use the [issue forms](https://github.com/devin-lai/Qwen-Image-2.1-Accel/issues/new/choose)
+for bugs, questions, feature requests and benchmarks. Search existing issues
+first. Include the commit, GPU/VRAM, OS, Python/PyTorch/CUDA/Triton versions,
+profile, relevant `QW21_*` settings and the smallest command that reproduces
+the behavior. Remove credentials and private paths from logs before posting.
+
+For performance reports, include warmup, timed repeats, image size, steps,
+seed, timing boundaries and a baseline comparison. Attach compact JSON reports
+and note any accuracy differences; follow the
+[benchmark workflow](docs/benchmarks/README.md). Results from unvalidated
+hardware are useful observations, not proof of supported inference.
+
+## Make a change
+
+Keep pull requests focused and explain the user-visible behavior and validation.
+For documentation changes, check commands against `--help` and verify links.
+For runtime changes, use the checks below and record the tested configuration.
+
 Start with [installation](docs/installation.md) and
 [architecture](docs/architecture.md). Runtime code belongs in
 `src/qwen_image_accel`; dependency installation, benchmark orchestration and
